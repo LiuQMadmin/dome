@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <div>{{ flag }}</div>
-    <button @click="change">改变</button>
+    <button @click="change">显示时间</button>
   </div>
 </template>
 
@@ -19,7 +19,9 @@ export default {
   },
   methods: {
     change() {
-      this.flag = "world";
+      setInterval(() => {
+        this.flag = new Date();
+      }, 1000);
     }
   }
 };
