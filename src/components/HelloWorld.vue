@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "HelloWorld",
   props: {
@@ -22,6 +23,13 @@ export default {
       setInterval(() => {
         this.flag = new Date();
       }, 1000);
+      axios
+        .get(
+          "/product/api/GetSellerWellList?sellerid=4904283&pageindex=1&pagesize=5&_=1604854707121"
+        )
+        .then(res => {
+          console.log(res);
+        });
     }
   }
 };
