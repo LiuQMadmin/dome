@@ -4,7 +4,7 @@
       alt="Vue logo"
       src="./assets/logo.png"
     >
-    <HelloWorld msg="Welcome to Nginx" />
+    <HelloWorld msg="首次部署成功" />
   </div>
 </template>
 
