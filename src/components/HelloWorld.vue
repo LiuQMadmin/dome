@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <div class="flag">{{ flag }}</div>
+    <div>{{ flag }}</div>
     <button @click="change">显示时间</button>
   </div>
 </template>
